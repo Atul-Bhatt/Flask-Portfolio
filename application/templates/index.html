@@ -9,7 +9,12 @@
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <!-- fonts -->
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -31,11 +36,11 @@
 
         <!-- Introduction -->
         <section class="intro" id="home">
-            <h1 class="section--title section__title--intro">
+            <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Atul Bhatt</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Python Developer</p>
-            <img class="profile_picture" src="/static/images/atulbhatt.jpg">
+            <img class="profile_picture" src="/static/images/profile1.jpg">
         </section>
 
         <!-- My Services -->
@@ -46,19 +51,19 @@
                     <h3>Web Scraping</h3>
                     <p>Creating web crawlers using Scrpay library. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                       cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
                 <div class="service">
                     <h3>Flask Development</h3>
                     <p>Creating web crawlers using Scrpay library. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                       cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
                 <div class="service">
                     <h3>Discord Bots</h3>
                     <p>Creating web crawlers using Scrpay library. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                       cillum dolore eu fugiat nulla pariatur.</p>
                 </div> <!-- service -->
             </div> <!-- services -->
             <a href="#work" class="btn">My Work</a>
@@ -70,9 +75,11 @@
             <p class="section__subtitle section__subtitle--about">Freelance Developer</p>
 
             <div class="about-me__body">
-                <p>For the past five years, I have had bitter-sweet relationship with tech.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                   cillum dolore eu fugiat nulla pariatur.</p>
             </div>
-            <img class="about-me__img" src="/static/images/atulbhatt1.jpg">
+            <img class="about-me__img" src="/static/images/aboutme.png">
         </section>
 
         <!-- My Work -->
@@ -83,6 +90,31 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="/static/images/portfolio1.png" alt="" class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/static/images/portfolio2.jpg" alt="" class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/static/images/portfolio3new.jpg" alt="" class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/static/images/portfolio4.png" alt="" class="portfolio__img">
+                </a>
+            </div>
         </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="mailto:pythondeveloper@gmail.com" class="footer__link">Mail Atul Bhatt</a>
+            <ul class="social__list">
+                <li class="social__list--item"><a href="https://github.com" class="social-list__link"></a>Github</li>
+                <li class="social__list--item"><a href="https://twitter.com" class="social-list__link"></a>Twitter</li>
+                <li class="social__list--item"><a href="https://facebook.com" class="social-list__link"></a>Facebook</li>
+                <li class="social__list--item"><a href="https://goodreads.com" class="social-list__link"></a>Goodreads</li>
+            </ul>
+        </footer>
     </body>
 </html>
